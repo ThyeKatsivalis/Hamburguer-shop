@@ -214,7 +214,58 @@ li {
   text-align: center;
 }
 
+.location iframe {
+  border-radius: 32px;
+  max-width: calc(100% - 25px);
+}
+
+.footer {
+  background-color: var(--black);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  gap: 32px;
+  padding: 32px 0;
+}
+
+.footer .menu__title span {
+  color: var(--primary);
+}
+
+.footer .menu__title, .footer .menu__subtitle  {
+  color: var(--white);
+  text-align: left;
+}
+
+.footer .button--primary {
+    padding: .36px;
+    text-transform: uppercase;
+  }
+
+.footer .button {
+  padding: 15px;
+  font-size: 25px;
+  transition: all .8s;
+}
+
+.footer .button:hover {
+  background-color: #ffffff;
+  color: #f8af35;
+}
+
+
+
 @media(max-width: 1023px) {
+
+  .footer__text__container {
+    margin-left: 10px;
+  }
   
   .menu__drinks, .menu__title, .menu__subtitle, .card {
     max-width: 450px;
@@ -226,6 +277,9 @@ li {
 
   .menu__cards {
     grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     gap: 24px;   
   }
@@ -288,12 +342,28 @@ li {
     max-width: calc(100% - 35px);
   }
 
+  .footer__container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 32px;
+    padding: 32px 0;
+  }
 }
 
-@media(max-width: 360px) {
+@media(max-width: 660px) {
   
   .menu__title, .menu__subtitle, .card {
     max-width: 400px;
+  }
+
+  .menu__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .menu__title {
@@ -323,4 +393,32 @@ li {
     line-height: 30px;
   }
 
+  .footer__container {
+    max-width: 300px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__container .menu__title, .footer__container .menu__subtitle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer .menu__title {
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 2px;
+    text-align: justify;
+  }
+
+  .footer .sub__title {
+    font-size: 28px;
+    line-height: 32px;
+    text-align: justify;
+  }
+
+  .location iframe {
+    width: 250px;
+    height: 150px;
+  }
 }
