@@ -192,6 +192,28 @@ li {
   list-style: none;
 }
 
+.location {
+  gap: 24px;
+  background-color: var(--gray-900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+  padding: 64px 0 120px;
+}
+
+.location__adress {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: capitalize;
+  font-family: 'Bebas Neue';
+}
+
+.location .menu__title, .location .menu__subtitle {
+  color: var(--white);
+  text-align: center;
+}
+
 @media(max-width: 1023px) {
   
   .menu__drinks, .menu__title, .menu__subtitle, .card {
@@ -256,6 +278,16 @@ li {
   .menu__drinks {
     padding: 20px;
   }
+
+  .location__adress {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  iframe {
+    max-width: calc(100% - 35px);
+  }
+
 }
 
 @media(max-width: 360px) {
