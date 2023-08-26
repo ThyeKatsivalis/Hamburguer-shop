@@ -8,10 +8,39 @@
   <link rel="stylesheet" href="./assets/styles/global.css">
   <link rel="stylesheet" href="./assets/styles/reset.css">
   <link rel="stylesheet" href="./assets/styles/home.css">
+  <link rel="stylesheet" href="./assets/styles/navbar.css">
 </head>
 
 <body>
-  <section class="menu">
+
+  <nav class="navbar">
+    <div class="navbar__brand">
+      <img class="navbar__logo" src="./assets/images/marketing/hamburguer-shop-logo.png" alt="Hamburguer Shop logo" />
+      <p class="navbar__title">o melhor da <span>cidade</span></p>
+    </div>
+
+    <ul class="navbar__links">
+      <li><a href="#menu">cardápio</a></li>
+      <li><a href="#drinks">bebidas</a></li>
+      <li><a href="#location">localização</a></li>
+      <li><button class="button button--primary">peça agora</button></li>
+    </ul>
+  </nav>
+
+  <section class="hero-header">
+    <div class="hero-header__container">
+      <div class="hero-header__content">
+        <h1 class="menu__title">Produtos <span>frescos</span> selecionados <span>a dedo</span>!</h1>
+        <p class="menu__subtitle">
+          <span>Preço bom</span> e <span>qualidade</span> pensados especialmente pra você!
+        </p>
+        <button class="card__price">fazer pedido.</button>
+      </div>
+      <img src="/assets/images/hero-header/hamburguer.png" alt="hamburguer sendo servido">
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
     <div>
       <h2 class="menu__title">cardápio</h2>
       <p class="menu__subtitle">Nossos hamburgueres feitos <span>especialmente</span> para você!</p>
@@ -82,7 +111,7 @@
     </div>
 
     <div>
-      <h2 class="menu__title">bebidas</h2>
+      <h2 class="menu__title" id="drinks">bebidas</h2>
       <p class="menu__subtitle">nossa seleção <span>especial</span> de bebidas!</p>
     </div>
 
@@ -119,7 +148,7 @@
 
     </div>
   </section>
-  <section class="location">
+  <section class="location" id="location">
     <div>
       <h2 class="menu__title">localização</h2>
       <p class="menu__subtitle">Veja onde estamos</p>
